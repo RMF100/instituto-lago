@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Instituto do Lago</title>
+    <meta name="description" content="Conheça a história do Instituto do Lago — estúdio GYROTONIC® e GYROKINESIS® no Porto, fundado em 2010 por uma família com quase 30 anos de experiência em saúde e bem-estar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* === Estilos específicos da página Sobre === */
+        .sobre-hero {
+            padding: calc(var(--section-padding) + 80px) 0 var(--section-padding);
+            background: var(--color-bg-warm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sobre-hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(200,169,110,0.10) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .sobre-hero-inner {
+            max-width: 760px;
+        }
+
+        .sobre-hero-inner h1 {
+            margin-bottom: 24px;
+            color: var(--color-primary-dark);
+        }
+
+        .sobre-hero-inner .lead {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--color-text-light);
+            line-height: 1.8;
+        }
+
+        /* Linha do tempo / história */
+        .sobre-story {
+            padding: var(--section-padding) 0;
+            background: var(--color-bg);
+        }
+
+        .sobre-story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .sobre-story-text h2 {
+            margin-bottom: 28px;
+        }
+
+        .sobre-story-text p {
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .sobre-story-text p:first-of-type {
+            font-size: 1.08rem;
+            color: var(--color-text);
+        }
+
+        /* Imagem lado direito */
+        .sobre-story-visual {
+            position: sticky;
+            top: 100px;
+        }
+
+        .sobre-story-image-wrap {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.10);
+        }
+
+        .sobre-story-image-wrap img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+        }
+
+        .sobre-story-caption {
+            margin-top: 16px;
+            font-size: 0.82rem;
+            color: var(--color-text-muted);
+            text-align: center;
+        }
+
+        /* Valores / pilares */
+        .sobre-pillars {
+            padding: var(--section-padding) 0;
+            background: var(--color-bg-warm);
+        }
+
+        .sobre-pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 52px;
+        }
+
+        .sobre-pillar {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 36px 28px;
+            transition: var(--transition);
+        }
+
+        .sobre-pillar:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+            border-color: rgba(61,90,76,0.2);
+        }
+
+        .sobre-pillar-num {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            color: var(--color-accent);
+            opacity: 0.5;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .sobre-pillar h3 {
+            font-size: 1.1rem;
+            color: var(--color-primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .sobre-pillar p {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            line-height: 1.7;
+        }
+
+        /* CTA de regresso */
+        .sobre-cta {
+            padding: 80px 0;
+            background: var(--color-primary-dark);
+            text-align: center;
+            color: #fff;
+        }
+
+        .sobre-cta h2 {
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .sobre-cta p {
+            color: rgba(255,255,255,0.65);
+            max-width: 480px;
+            margin: 0 auto 36px;
+            font-size: 1.05rem;
+        }
+
+        .sobre-cta em {
+            color: var(--color-accent-light);
+        }
+
+        .sobre-cta .btn-primary {
+            background: var(--color-accent);
+            color: var(--color-primary-dark);
+        }
+
+        .sobre-cta .btn-primary:hover {
+            background: var(--color-accent-light);
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--color-text-muted);
+            margin-bottom: 32px;
+        }
+
+        .breadcrumb a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .breadcrumb svg {
+            width: 14px;
+            height: 14px;
+            opacity: 0.5;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .sobre-story-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .sobre-story-visual { position: static; }
+
+            .sobre-story-image-wrap img { height: 300px; }
+
+            .sobre-pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+    <span class="logo-text">Instituto do Lago</span>
+           </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="sobre.html" class="nav-link" style="color: var(--color-primary);">Sobre Nós</a></li>
+                <li><a href="index.html#services" class="nav-link">Serviços</a></li>
+                <li><a href="index.html#team" class="nav-link">Equipa</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contacto</a></li>
+                <li><a href="index.html#contact" class="nav-link nav-cta">Marcar Sessão</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero da página Sobre -->
+    <section class="sobre-hero">
+        <div class="container">
+            <div class="sobre-hero-inner">
+                <div class="breadcrumb">
+                    <a href="index.html">Início</a>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                    <span>Sobre Nós</span>
+                </div>
+                <span class="section-tag">Quem Somos</span>
+                <h1>Um espaço dedicado ao seu <em>bem-estar</em></h1>
+                <p class="lead">O Instituto do Lago nasceu da paixão por um movimento diferente — orgânico, circular, fluido — e por uma família que acredita que o corpo e a mente se transformam em conjunto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- História -->
+    <section class="sobre-story">
+        <div class="container">
+            <div class="sobre-story-grid">
+                <div class="sobre-story-text" data-animate="fade-right">
+                    <span class="section-tag">A Nossa História</span>
+                    <h2>Desde 2010 a construir <em>saúde</em> em movimento</h2>
+                    <p>O Instituto do Lago abriu as suas portas em 2010, nascido da paixão de uma família com quase 30 anos de experiência em fisioterapia e osteopatia. Uma herança de cuidado que se traduz numa abordagem verdadeiramente integrativa.</p>
+                    <p>Somos um espaço multidisciplinar e holístico que integra um vasto leque de especialidades — do GYROTONIC® à Osteopatia, da Fisioterapia à Acupuntura. A nossa missão é estabelecer uma relação dinâmica com os nossos clientes e pacientes, proporcionando um serviço atual e personalizado.</p>
+                    <p>Ensinamos códigos de movimento através da prática regular de movimentos orgânicos, circulares, suaves e fluidos. São padrões tridimensionais distintos dos sistemas de exercício lineares e segmentados dos ginásios tradicionais — uma linguagem do corpo que, uma vez aprendida, transforma a forma como vive.</p>
+                    <p>O nosso compromisso é com cada pessoa que entra no estúdio: entender o seu corpo, as suas limitações e o seu potencial, e guiá-la num percurso de movimento que dure toda a vida.</p>
+                </div>
+                <div class="sobre-story-visual" data-animate="fade-left">
+                    <div class="sobre-story-image-wrap">
+                        <img src="sobre-estudio.png" alt="Amine Benderra a orientar uma sessão GYROTONIC® no Instituto do Lago" loading="lazy">
+                    </div>
+                    <p class="sobre-story-caption">Amine Benderra em sessão de GYROTONIC® — Porto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares / Missão -->
+    <section class="sobre-pillars">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Os Nossos Pilares</span>
+                <h2>O que nos define enquanto <em>estúdio</em></h2>
+                <p class="section-desc">Três princípios que orientam cada sessão, cada tratamento e cada relação com os nossos clientes.</p>
+            </div>
+            <div class="sobre-pillars-grid">
+                <div class="sobre-pillar" data-animate="fade-up" data-delay="0">
+                    <div class="sobre-pillar-num">01</div>
+                    <h3>Movimento Orgânico</h3>
+                    <p>Acreditamos num movimento que respeita a natureza do corpo humano — circular, tridimensional e fluido, em harmonia com os ritmos naturais de cada pessoa.</p>
+                </div>
+                <div class="sobre-pillar" data-animate="fade-up" data-delay="0.1">
+                    <div class="sobre-pillar-num">02</div>
+                    <h3>Cuidado Personalizado</h3>
+                    <p>Cada cliente é único. As nossas sessões são individuais ou semi-privadas, adaptadas ao historial de saúde, objetivos e capacidades de cada pessoa.</p>
+                </div>
+                <div class="sobre-pillar" data-animate="fade-up" data-delay="0.2">
+                    <div class="sobre-pillar-num">03</div>
+                    <h3>Abordagem Integrativa</h3>
+                    <p>Combinamos GYROTONIC®, Osteopatia, Fisioterapia e Acupuntura numa visão holística da saúde — tratando o corpo como um todo, não como partes isoladas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="sobre-cta">
+        <div class="container">
+            <h2>Pronto para <em>experimentar</em>?</h2>
+            <p>Venha conhecer o Instituto do Lago e descubra o que o movimento orgânico pode fazer por si.</p>
+            <div class="hero-actions" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary btn-large magnetic">Marcar uma Sessão</a>
+                <a href="index.html#services" class="btn btn-secondary btn-large magnetic" style="border-color: rgba(255,255,255,0.4); color: #fff;">Ver Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">Instituto do Lago</span>
+                    <p>Estúdio GYROTONIC® e GYROKINESIS® no Porto. Osteopatia, Fisioterapia e bem-estar desde 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navegação</h4>
+                        <a href="sobre.html">Sobre Nós</a>
+                        <a href="index.html#services">Serviços</a>
+                        <a href="index.html#team">Equipa</a>
+                        <a href="index.html#contact">Contacto</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Serviços</h4>
+                        <a href="index.html#services">GYROTONIC®</a>
+                        <a href="index.html#services">GYROKINESIS®</a>
+                        <a href="index.html#services">Osteopatia</a>
+                        <a href="index.html#services">Fisioterapia</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <a href="tel:+351919198847">+351 919 198 847</a>
+                        <a href="tel:+351226175617">+351 226 175 617</a>
+                        <a href="mailto:info@institutodolago.pt">info@institutodolago.pt</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="#" id="openPrivacy">Política de Privacidade</a>
+                        <a href="#" id="openCookies">Política de Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Instituto do Lago. Todos os direitos reservados.</p>
+                <p>GYROTONIC® e GYROKINESIS® são marcas registadas de Gyrotonic Sales Corp.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

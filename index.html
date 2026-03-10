@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto do Lago | Estúdio GYROTONIC® e GYROKINESIS® no Porto</title>
+    <meta name="description" content="Instituto do Lago - O primeiro estúdio dedicado a GYROTONIC® e GYROKINESIS® no norte de Portugal. Osteopatia, Fisioterapia e bem-estar no Porto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-line"></div>
+            <span class="loader-text">Instituto do Lago</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+    <span class="logo-text">Instituto do Lago</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#team" class="nav-link">Equipa</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Marcar Sessão</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+<!-- About Section -->
+<section class="section about" id="about">
+    <div class="container">
+        <div class="about-grid">
+
+            <!-- Coluna esquerda: frase de impacto + imagem -->
+            <div class="about-content" data-animate="fade-right">
+    <span class="section-tag">Quem Somos</span>
+    <h2 class="about-impact-phrase">Onde o movimento encontra a <em>arte do bem-estar.</em></h2>
+    
+    <a href="sobre.html" class="about-discover-link">
+        Conhecer a nossa história
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+    </a>
+
+    <div class="about-image-container">
+        <img 
+            src="sobre-estudio.png" 
+            alt="Sessão de GYROTONIC® no Instituto do Lago — Amine Benderra com cliente" 
+            class="about-section-image"
+            loading="lazy"
+        >
+    </div>
+</div>
+
+            <!-- Coluna direita: cartões de estatísticas (inalterados) -->
+            <div class="about-visual" data-animate="fade-left">
+                <div class="about-card tilt-card">
+                    <div class="about-stat">
+                        <span class="stat-number" data-count="14" data-suffix="+">0</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                </div>
+                <div class="about-card tilt-card">
+                    <div class="about-stat">
+                        <span class="stat-number" data-count="30">0</span>
+                        <span class="stat-label">Anos de Legado Familiar</span>
+                    </div>
+                </div>
+                <div class="about-card accent tilt-card">
+                    <div class="about-stat">
+                        <span class="stat-number no-count">Primeiro</span>
+                        <span class="stat-label">Estúdio GYROTONIC® no Norte de Portugal</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Values Strip -->
+    <section class="values-strip">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-item" data-animate="fade-up" data-delay="0">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Abordagem Holística</h3>
+                    <p>Tratamento integrado que considera o corpo como um todo</p>
+                </div>
+                <div class="value-item" data-animate="fade-up" data-delay="0.1">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3>Cuidado Personalizado</h3>
+                    <p>Sessões individuais ou semi-privadas adaptadas a si</p>
+                </div>
+                <div class="value-item" data-animate="fade-up" data-delay="0.2">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Multidisciplinar</h3>
+                    <p>GYROTONIC®, Osteopatia, Fisioterapia e mais</p>
+                </div>
+                <div class="value-item" data-animate="fade-up" data-delay="0.3">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Para Todos</h3>
+                    <p>Adequado para todas as idades e níveis de aptidão</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Os Nossos Serviços</span>
+                <h2>Cuidamos de si de forma <em>integrada</em></h2>
+                <p class="section-desc">Combinamos diferentes abordagens terapêuticas para promover o seu bem-estar físico e mental.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured tilt-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M24 8c-4 8-4 16 0 24M8 24c8-4 16-4 24 0" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>GYROTONIC®</h3>
+                    <p>Uma das metodologias de exercício mais completas da atualidade. Combina princípios de natação, ginástica, yoga, dança e tai-chi, com movimentos circulares, ondulares e espiralados sem impacto.</p>
+                    <ul class="service-benefits">
+                        <li>Tonificação muscular e flexibilidade</li>
+                        <li>Melhoria da postura e força da coluna</li>
+                        <li>Coordenação motora e circulação</li>
+                        <li>Sessões individuais ou semi-privadas</li>
+                    </ul>
+                    <span class="service-tag">Destaque</span>
+                </div>
+                <div class="service-card tilt-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4v40M4 24h40M12 12l24 24M36 12L12 36" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>GYROKINESIS®</h3>
+                    <p>O método predecessor do GYROTONIC®, sem necessidade de equipamento. Inclui auto-massagem, exercícios respiratórios e mobilização da coluna através de flexão, extensão e rotação.</p>
+                    <ul class="service-benefits">
+                        <li>Estimulação cardiovascular</li>
+                        <li>Plasticidade neuromuscular</li>
+                        <li>Sem equipamento necessário</li>
+                        <li>Aulas online disponíveis</li>
+                    </ul>
+                </div>
+                <div class="service-card tilt-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4C14 4 8 14 8 24s6 20 16 20" stroke-linecap="round"/>
+                            <path d="M24 4c10 0 16 10 16 20s-6 20-16 20" stroke-linecap="round"/>
+                            <circle cx="24" cy="18" r="4"/>
+                            <circle cx="24" cy="32" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Osteopatia</h3>
+                    <p>Sob a direção do Dr. Ahmed Benderra, ajudamos a aliviar problemas crónicos e agudos, proporcionando alívio de sintomas e disfunções do organismo.</p>
+                    <ul class="service-benefits">
+                        <li>Problemas músculo-esqueléticos</li>
+                        <li>Alívio do stress</li>
+                        <li>Saúde digestiva</li>
+                        <li>Cuidados na gravidez</li>
+                    </ul>
+                </div>
+                <div class="service-card tilt-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 24h32M24 8v32" stroke-linecap="round"/>
+                            <rect x="14" y="14" width="20" height="20" rx="10"/>
+                        </svg>
+                    </div>
+                    <h3>Fisioterapia</h3>
+                    <p>Avaliação especializada e tratamento personalizado. A nossa fisioterapeuta é especializada no método GYROTONIC®, oferecendo uma abordagem integrada à reabilitação.</p>
+                    <ul class="service-benefits">
+                        <li>Avaliação inicial completa</li>
+                        <li>Reabilitação personalizada</li>
+                        <li>Integração com GYROTONIC®</li>
+                        <li>Acompanhamento contínuo</li>
+                    </ul>
+                </div>
+                <div class="service-card tilt-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4l4 8 8 1-6 6 2 8-8-4-8 4 2-8-6-6 8-1z" stroke-linejoin="round"/>
+                            <circle cx="24" cy="36" r="8"/>
+                        </svg>
+                    </div>
+                    <h3>Acupuntura</h3>
+                    <p>Terapia complementar para alívio da dor, redução do stress e promoção do equilíbrio energético do corpo, integrada com as restantes terapias do instituto.</p>
+                    <ul class="service-benefits">
+                        <li>Alívio da dor</li>
+                        <li>Redução do stress</li>
+                        <li>Equilíbrio energético</li>
+                        <li>Abordagem integrativa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+<!-- Benefits Section -->
+<section class="section benefits" id="benefits">
+    <div class="container">
+        <div class="benefits-layout">
+
+            <!-- Coluna 1: Imagem -->
+            <div class="benefits-image-col" data-animate="fade-right">
+                <div class="benefits-image-wrapper">
+                    <img
+                        src="IMG-20230603-WA0029.jpg"
+                        alt="Sessão GYROTONIC® no Instituto do Lago"
+                        loading="lazy"
+                        class="benefits-photo"
+                    >
+                    <div class="benefits-image-badge">
+                        <span class="benefit-badge-number" data-count="14" data-suffix="+">0</span>
+                        <span class="benefit-badge-label">Anos de<br>Experiência</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Texto + Lista -->
+            <div class="benefits-text-col">
+                <div class="benefits-left" data-animate="fade-up">
+                    <span class="section-tag">Benefícios</span>
+                    <h2>Porque escolher o <em>Instituto do Lago</em></h2>
+                    <p>Os nossos métodos ensinam movimentos tridimensionais que promovem saúde sustentável e hábitos de bem-estar para o dia-a-dia.</p>
+                </div>
+                <div class="benefits-right">
+                    <div class="benefit-item" data-animate="fade-left" data-delay="0.1">
+                        <span class="benefit-number">01</span>
+                        <div>
+                            <h4>Correção Postural</h4>
+                            <p>Melhoria da consciência corporal e alinhamento da coluna vertebral.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-animate="fade-left" data-delay="0.2">
+                        <span class="benefit-number">02</span>
+                        <div>
+                            <h4>Flexibilidade e Força</h4>
+                            <p>Tonificação muscular com aumento progressivo da mobilidade articular.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-animate="fade-left" data-delay="0.3">
+                        <span class="benefit-number">03</span>
+                        <div>
+                            <h4>Alívio de Tensões</h4>
+                            <p>Redução do stress e tensões acumuladas no corpo e na mente.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-animate="fade-left" data-delay="0.4">
+                        <span class="benefit-number">04</span>
+                        <div>
+                            <h4>Reabilitação</h4>
+                            <p>Indicado para recuperação de lesões e adaptado a todas as condições físicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Team Section -->
+    <!-- Team Section -->
+<section class="section team" id="team">
+    <div class="container">
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">A Nossa Equipa</span>
+            <h2>Profissionais <em>dedicados</em> ao seu cuidado</h2>
+            <p class="section-desc">Formação especializada e anos de experiência ao serviço do seu bem-estar.</p>
+        </div>
+        <div class="team-single-wrap">
+            <div class="team-card team-card-single tilt-card" data-animate="fade-up">
+                <div class="team-photo-wrapper">
+                    <img
+                        src="WhatsApp Image 2020-07-29 at 10.54.18 (1).jpeg"
+                        alt="Amine Benderra — Instrutor GYROTONIC®"
+                        class="team-photo"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="team-card-body">
+                    <h3>Amine Benderra</h3>
+                    <span class="team-role">Instrutor Certificado GYROTONIC® &middot; Osteopata</span>
+                    <p>Formação em Londres e Alemanha. O único profissional no norte de Portugal qualificado para formar novos instrutores GYROTONIC®. Certificado desde 2010.</p>
+                    <div class="team-tags">
+                        <span class="team-tag-pill">GYROTONIC®</span>
+                        <span class="team-tag-pill">GYROKINESIS®</span>
+                        <span class="team-tag-pill">Osteopatia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">O Que Dizem Sobre Nós</span>
+            <h2>Resultados que <em>falam</em> por si</h2>
+            <div class="testimonials-rating">
+                <div class="stars">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="rating-text">5 / 5 estrelas &middot; 36 reviews no Google</span>
+            </div>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card tilt-card" data-animate="fade-up" data-delay="0">
+                <div class="testimonial-quote">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="quote-icon"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                </div>
+                <p class="testimonial-text">O GYROTONIC foi a melhor aposta que poderia ter feito para regressar ao meu corpo após oito anos de maternidade sem auto-cuidado físico.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar"><span>IV</span></div>
+                    <div>
+                        <strong>Ines Villasboas</strong>
+                        <span>Cliente</span>
+                    </div>
+                </div>
+                <span class="testimonial-source">Google Reviews &middot; 5/5</span>
+            </div>
+            <div class="testimonial-card tilt-card" data-animate="fade-up" data-delay="0.15">
+                <div class="testimonial-quote">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="quote-icon"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                </div>
+                <p class="testimonial-text">I've taken a few sessions there and I really love it. Amine is a great teacher and you can feel his experience as a trainer for many years.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar"><span>JN</span></div>
+                    <div>
+                        <strong>Judith Nagel</strong>
+                        <span>Cliente</span>
+                    </div>
+                </div>
+                <span class="testimonial-source">Google Reviews &middot; 5/5</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+       <!-- Hero Section -->
+  <!-- Gallery Carousel Section -->
+<div class="gallery-intro">
+    <div class="container">
+        <span class="section-tag">O Nosso Espaço</span>
+        <h2>Conheça as nossas <em>instalações</em></h2>
+        <p>Um espaço cuidadosamente desenhado para o movimento, o cuidado e o bem-estar.</p>
+    </div>
+</div>
+
+<section class="gallery-carousel" id="galeria" aria-label="Galeria de Imagens">
+    <div class="gallery-carousel__track-wrapper">
+        <div class="gallery-carousel__track" id="galleryTrack">
+            <div class="gallery-carousel__slide">
+                <img src="IMG-20230603-WA0004.jpg" alt="Estúdio GYROTONIC® — Vista geral do espaço" loading="lazy">
+            </div>
+            <div class="gallery-carousel__slide">
+                <img src="IMG_1200.jpg" alt="Sala de equipamentos GYROTONIC®" loading="lazy">
+            </div>
+            <div class="gallery-carousel__slide">
+                <img src="IMG_1233.jpg" alt="Equipamento GYROTONIC® em detalhe" loading="lazy">
+            </div>
+            <div class="gallery-carousel__slide">
+                <img src="IMG_1275.jpg" alt="Balneários e instalações de apoio" loading="lazy">
+            </div>
+            <div class="gallery-carousel__slide">
+                <img src="IMG_0933.jpg" alt="Detalhes do espaço — Instituto do Lago" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Setas de navegação -->
+        <button class="gallery-carousel__btn gallery-carousel__btn--prev" id="galleryPrev" aria-label="Imagem anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="gallery-carousel__btn gallery-carousel__btn--next" id="galleryNext" aria-label="Próxima imagem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Dots de navegação -->
+    <div class="gallery-carousel__dots" id="galleryDots" role="tablist" aria-label="Navegar entre imagens">
+        <button class="gallery-carousel__dot active" data-index="0" role="tab" aria-selected="true" aria-label="Imagem 1"></button>
+        <button class="gallery-carousel__dot" data-index="1" role="tab" aria-selected="false" aria-label="Imagem 2"></button>
+        <button class="gallery-carousel__dot" data-index="2" role="tab" aria-selected="false" aria-label="Imagem 3"></button>
+        <button class="gallery-carousel__dot" data-index="3" role="tab" aria-selected="false" aria-label="Imagem 4"></button>
+        <button class="gallery-carousel__dot" data-index="4" role="tab" aria-selected="false" aria-label="Imagem 5"></button>
+    </div>
+
+    <!-- Contador de slides -->
+    <div class="gallery-carousel__counter">
+        <span id="galleryCurrentSlide">1</span>
+        <span class="gallery-carousel__counter-sep">/</span>
+        <span>5</span>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <span class="section-tag">Contacto</span>
+                    <h2>Venha <em>visitar-nos</em></h2>
+                    <p>Estamos disponíveis para esclarecer todas as suas dúvidas e ajudá-lo a encontrar o serviço mais adequado às suas necessidades.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Morada</h4>
+                                <p>Rua Professor Mota Pinto, 42<br>Ent. 42F, Edifício do Lago I, Sala 2.04<br>4100-353 Porto</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p><a href="tel:+351919198847">+351 919 198 847</a><br><a href="tel:+351226175617">+351 226 175 617</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:instituto@terapiasdolago.com">instituto@terapiasdolago.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h4>Horário</h4>
+                                <p>Segunda a Sábado: 08h00 - 21h00<br>Domingo: Encerrado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/Institutodolago" target="_blank" rel="noopener" aria-label="Facebook" class="magnetic">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/institutodolago" target="_blank" rel="noopener" aria-label="Instagram" class="magnetic">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-map" data-animate="fade-left">
+                    <div class="map-wrapper">
+                        <div id="mapPlaceholder" class="map-placeholder">
+                            <div class="map-placeholder-content">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <p>Rua Professor Mota Pinto, 42<br>Edifício do Lago I, Sala 2.04<br>4100-353 Porto</p>
+                                <button class="btn btn-outline btn-sm" id="loadMap">Carregar Mapa Google</button>
+                                <span class="map-placeholder-note">Ao carregar, aceita os cookies do Google Maps</span>
+                            </div>
+                        </div>
+                        <iframe
+                            id="googleMap"
+                            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.5!2d-8.6345!3d41.1579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464e62c8a8c7f%3A0x0!2sRua+Professor+Mota+Pinto+42%2C+Porto!5e0!3m2!1spt-PT!2spt!4v1"
+                            width="100%"
+                            height="100%"
+                            style="border:0; display:none;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização do Instituto do Lago">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <p><strong>Acessibilidade:</strong> Entrada acessível a cadeiras de rodas</p>
+                        <p><strong>Nota:</strong> Marcação prévia obrigatória</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">Instituto do Lago</span>
+                <p>Estúdio GYROTONIC® e GYROKINESIS® no Porto. Osteopatia, Fisioterapia e bem-estar desde 2010.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <a href="#about">Sobre Nós</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#team">Equipa</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <a href="#services">GYROTONIC®</a>
+                    <a href="#services">GYROKINESIS®</a>
+                    <a href="#services">Osteopatia</a>
+                    <a href="#services">Fisioterapia</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <a href="tel:+351919198847">+351 919 198 847</a>
+                    <a href="tel:+351226175617">+351 226 175 617</a>
+                    <a href="mailto:info@institutodolago.pt">info@institutodolago.pt</a>
+                    <a href="#contact">Marcar Sessão</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#" id="openPrivacy">Política de Privacidade</a>
+                    <a href="#" id="openCookies">Política de Cookies</a>
+                    <a href="#" id="openNormas">Normas do Estúdio</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Normas do Estúdio - expandível no footer -->
+        <div class="footer-normas" id="footerNormas">
+            <div class="footer-normas-header" id="toggleFooterNormas">
+                <span>Normas do Estúdio</span>
+                <svg class="footer-normas-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </div>
+            <div class="footer-normas-body" id="footerNormasBody">
+                <div class="footer-normas-grid">
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">1</span>
+                        <div>
+                            <strong>Cancelamento de Sessões</strong>
+                            <p>Sessões canceladas com menos de 24 horas de notificação estão sujeitas a pagamento. O cancelamento via email não será tido como válido. Caso desmarque a sua sessão com 24 horas de antecedência, terá até ao final desse mesmo mês para compensar a sua sessão.</p>
+                        </div>
+                    </div>
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">2</span>
+                        <div>
+                            <strong>Validade das Sessões</strong>
+                            <p>Temos diversas subscrições mensais. Caso não usufrua das suas sessões dentro do seu período de validade, estas ficarão sem efeito.</p>
+                        </div>
+                    </div>
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">3</span>
+                        <div>
+                            <strong>Pagamento, Transferência e Reembolso de Sessões</strong>
+                            <p>O pagamento das mensalidades implica pré-pagamento e este deverá ser efetuado até ao dia 8 de cada mês. As sessões são pessoais, intransmissíveis e não reembolsáveis.</p>
+                        </div>
+                    </div>
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">4</span>
+                        <div>
+                            <strong>Pontualidade</strong>
+                            <p>Agradecemos que compareça a horas para a sua sessão. Em caso de atraso esta não será prolongada. É aconselhável que chegue 5 minutos antes da hora marcada para que se possa preparar para o treino.</p>
+                        </div>
+                    </div>
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">5</span>
+                        <div>
+                            <strong>Telemóveis</strong>
+                            <p>É conveniente que desligue o telemóvel assim que entrar no estúdio.</p>
+                        </div>
+                    </div>
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">6</span>
+                        <div>
+                            <strong>Responsabilidade</strong>
+                            <p>O Instituto do Lago não se responsabiliza por objectos roubados, perdidos ou danificados dentro do estúdio. Damos-lhe a possibilidade de trazer os seus valores para o espaço de treino.</p>
+                        </div>
+                    </div>
+                    <div class="footer-norma-item">
+                        <span class="footer-norma-num">7</span>
+                        <div>
+                            <strong>Ficha de Cliente</strong>
+                            <p>Todos os clientes que frequentem as sessões deverão preencher uma ficha com informações verdadeiras sobre a sua condição física.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Instituto do Lago. Todos os direitos reservados.</p>
+            <p>GYROTONIC® e GYROKINESIS® são marcas registadas de Gyrotonic Sales Corp.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <strong>Privacidade &amp; Cookies</strong>
+                <p>Utilizamos cookies de terceiros (Google Maps) para melhorar a sua experiência. Pode aceitar ou rejeitar. <a href="#" id="cookiePrivacyLink">Política de Privacidade</a></p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-btn-reject" id="cookieReject">Rejeitar</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="privacy-modal-overlay" id="privacyModal">
+        <div class="privacy-modal">
+            <button class="privacy-modal-close" id="closePrivacy" aria-label="Fechar">&times;</button>
+            <div class="privacy-modal-body">
+                <h2>Política de Privacidade</h2>
+                <p class="privacy-date">Última atualização: fevereiro 2026</p>
+
+                <h3>1. Responsável pelo Tratamento</h3>
+                <p><strong>Instituto do Lago - Estúdio GYROTONIC® e GYROKINESIS®</strong><br>
+                Rua Professor Mota Pinto, 42, Edifício do Lago I, Sala 2.04<br>
+                4100-353 Porto, Portugal<br>
+                Email: instituto@terapiasdolago.com<br>
+                Telefone: +351 919 198 847</p>
+
+                <h3>2. Dados Pessoais Recolhidos</h3>
+                <p>Através deste website, podemos recolher os seguintes dados quando nos contacta diretamente por email ou telefone:</p>
+                <ul>
+                    <li>Nome</li>
+                    <li>Endereço de email</li>
+                    <li>Número de telefone</li>
+                    <li>Informações relativas ao motivo do contacto</li>
+                </ul>
+
+                <h3>3. Finalidades do Tratamento</h3>
+                <p>Os seus dados são tratados para:</p>
+                <ul>
+                    <li>Responder aos seus pedidos de contacto e marcação de sessões</li>
+                    <li>Prestar os serviços solicitados</li>
+                    <li>Cumprir obrigações legais</li>
+                </ul>
+
+                <h3>4. Base Legal</h3>
+                <p>O tratamento dos seus dados baseia-se em:</p>
+                <ul>
+                    <li><strong>Consentimento</strong> (Art. 6.º, n.º 1, al. a) do RGPD) - para o uso de cookies de terceiros</li>
+                    <li><strong>Execução de contrato</strong> (Art. 6.º, n.º 1, al. b) do RGPD) - para marcação e prestação de serviços</li>
+                    <li><strong>Interesse legítimo</strong> (Art. 6.º, n.º 1, al. f) do RGPD) - para funcionamento técnico do site</li>
+                </ul>
+
+                <h3>5. Cookies e Serviços de Terceiros</h3>
+                <p>Este website utiliza:</p>
+                <ul>
+                    <li><strong>Google Fonts</strong> - para tipografia (carregamento de fontes externas)</li>
+                    <li><strong>Google Maps</strong> - para exibir a nossa localização (apenas com o seu consentimento)</li>
+                </ul>
+                <p>Estes serviços podem recolher dados como o seu endereço IP. O Google Maps só é carregado após o seu consentimento explícito.</p>
+
+                <h3>6. Período de Conservação</h3>
+                <p>Os dados pessoais são conservados apenas pelo tempo necessário para a finalidade para a qual foram recolhidos, ou conforme exigido por lei.</p>
+
+                <h3>7. Direitos do Titular dos Dados</h3>
+                <p>Nos termos do RGPD e da Lei n.º 58/2019, tem direito a:</p>
+                <ul>
+                    <li>Aceder aos seus dados pessoais</li>
+                    <li>Retificar dados incorretos</li>
+                    <li>Solicitar a eliminação dos seus dados</li>
+                    <li>Limitar o tratamento dos seus dados</li>
+                    <li>Portabilidade dos dados</li>
+                    <li>Opor-se ao tratamento</li>
+                    <li>Retirar o consentimento a qualquer momento</li>
+                </ul>
+                <p>Para exercer estes direitos, contacte-nos: <strong>instituto@terapiasdolago.com</strong></p>
+
+                <h3>8. Autoridade de Controlo</h3>
+                <p>Tem o direito de apresentar reclamação junto da <strong>Comissão Nacional de Proteção de Dados (CNPD)</strong>:</p>
+                <p>Website: <a href="https://www.cnpd.pt" target="_blank" rel="noopener noreferrer">www.cnpd.pt</a></p>
+
+                <h3>9. Política de Cookies</h3>
+                <p><strong>Cookies essenciais:</strong> Utilizamos <code>localStorage</code> para guardar a sua preferência de consentimento de cookies. Não são instalados cookies próprios.</p>
+                <p><strong>Cookies de terceiros:</strong> O Google Maps pode instalar cookies quando carregado. Este serviço só é ativado com o seu consentimento explícito.</p>
+                <p>Pode a qualquer momento alterar as suas preferências de cookies limpando os dados do navegador ou clicando em "Política de Cookies" no rodapé do site.</p>
+
+                <h3>10. Alterações a esta Política</h3>
+                <p>Reservamo-nos o direito de atualizar esta política. Quaisquer alterações serão publicadas nesta página com a data de atualização.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
